@@ -20,7 +20,7 @@ public class GoldMining {
                     resultTable[i][j] = Math.max(resultTable[i - 1][j], resultTable[i - 1][j - p[i - 1]] + g[i - 1]);
                 }
             }
-        }-
+        }
         //返回最后一个格子的值
         return resultTable[g.length][w];
     }
